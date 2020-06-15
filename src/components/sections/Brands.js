@@ -6,37 +6,22 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
+import { ReactComponent as LocalLogicLogo } from '@images/logos/locallogic.svg';
+import { ReactComponent as LandrLogo } from '@images/logos/landr.svg';
+import { ReactComponent as GameloftLogo } from '@images/logos/gameloft.svg';
 
 const LOGOS = [
   {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
+    logo: GameloftLogo,
+    link: 'https://gameloft.com',
   },
   {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
+    logo: LandrLogo,
+    link: 'https://landr.com',
   },
   {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
+    logo: LocalLogicLogo,
+    link: 'https://locallogic.co',
   },
 ];
 
@@ -57,10 +42,10 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="past" accent>
         <StyledContainer>
-          <div>
-            <h1>Used by biggest in tech</h1>
+          <StyledDiv>
+            <h1>Decade of experience<br/>at companies like</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
@@ -68,7 +53,7 @@ const UsedBy = () => (
                 </ExternalLink>
               ))}
             </LogoGrid>
-          </div>
+          </StyledDiv>
           <Art>
             <Img fluid={data.art_story.childImageSharp.fluid} />
           </Art>
@@ -80,14 +65,22 @@ const UsedBy = () => (
 
 const LogoGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 64px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 48px;
   justify-items: center;
-  margin-top: 96px;
+  margin-top: 48px;
 
   a {
     svg {
       width: 100%;
+      max-height: 92px;
+      color: #FFFFFF;
+    }
+  }
+
+  a:hover {
+    svg {
+      color: #D2B274;
     }
   }
 
@@ -96,10 +89,19 @@ const LogoGrid = styled.div`
   }
 `;
 
+const StyledDiv = styled.div`
+  max-width: 50%;
+  text-align: center;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    max-width: 100%;
+  }
+`;
+
 const StyledContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   position: relative;
+  color: ${props => props.theme.color.black.regular};
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-content: center;

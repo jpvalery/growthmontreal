@@ -31,16 +31,16 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Advisorship
                 <br />
-                every way
+                for sustainable growth
                 <br />
-                that matters
+                for digital products and services
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="https://jpvalery.typeform.com/to/y96C4A">
+                  Let's talk &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>
@@ -92,6 +92,7 @@ const Grid = styled.div`
 
 const Text = styled.div`
   justify-self: center;
+  color: ${props => props.theme.color.black.regular};
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
@@ -99,8 +100,10 @@ const Text = styled.div`
 `;
 
 const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
+  color: ${props => props.theme.color.highlight};
   text-decoration: none;
+  font-family: ${props => props.theme.font.primary};
+  font-size: ${props => props.theme.font_size.large};
 
   &:hover {
     color: ${props => props.theme.color.black.regular};

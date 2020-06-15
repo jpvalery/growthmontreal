@@ -7,21 +7,21 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
+import LinkedinIcon from '@static/icons/linkedin.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    link: 'https://github.com/jpvalery',
   },
   {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    icon: LinkedinIcon,
+    link: 'https://linkedin.com/in/jpvalery',
   },
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/jpvalery',
   },
 ];
 
@@ -52,13 +52,22 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <h2>Growth Montreal</h2>
               <span>
                 Illustrations by
                 {` `}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
                 </ExternalLink>
+              </span><br/>
+              <span>
+                Based on
+                {` `}
+                <ExternalLink href="https://github.com/ajayns/gatsby-absurd">
+                  @ajayns
+                </ExternalLink>
+                {` `}
+                starter
               </span>
             </Copyright>
             <SocialIcons>
@@ -102,6 +111,10 @@ const Copyright = styled.div`
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  span {
+    font-size: 18px;
   }
 `;
 

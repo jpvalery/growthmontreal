@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-absurd",
+  "name": "growthmontreal",
   "private": true,
-  "description": "An absurd starter for Gatsby",
+  "description": "Based on gatsby-absurd",
   "version": "0.1.0",
-  "author": "Ajay NS <ajay.ns@outlook.com>",
+  "author": "@jpvalery",
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
     "gatsby": "^2.0.76",

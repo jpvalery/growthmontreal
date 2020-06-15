@@ -44,16 +44,14 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="mission">
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Eyes on the prize</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+              With a decade of experience, we know how to navigate uncertainty and get meaningful things done.<br />
+              No fluff, no bullshit. Real talk, real results.
               </p>
             </div>
             <Art>
@@ -65,23 +63,20 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Growth as a mindset</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+              It's easy to <em>hack</em> and <em>hustle</em> your way to short term wins.<br />
+              That ain't us.<br />
+              We bring scalable and sustainable growth systems as engines to power your product.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>Unstoppable good ideas machine</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
+                From tools, to systems, to automations, and the synergies between them all.<br />
+                Add some turbo to support your team.
               </p>
             </div>
             <Art>
@@ -96,9 +91,9 @@ const About = () => (
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 6fr 5fr;
   grid-gap: 40px;
-  text-align: right;
+
   align-items: center;
   justify-items: center;
   margin: 24px 0;
@@ -106,8 +101,7 @@ const Grid = styled.div`
   ${props =>
     props.inverse &&
     `
-    text-align: left;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 5fr 6fr;
   `}
 
   h2 {

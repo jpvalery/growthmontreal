@@ -3,62 +3,78 @@ import React from 'react';
 import { Section, Container } from '@components/global';
 
 import FaqItem from '@common/FaqItem';
-import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'Who are you?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        This is currently just me, Jp. Born in France, moved to Montréal a couple of years ago. Now a dual citizen.<br />
+        I started an indie musical label when I was 16, began my professional careers in non-profits and freelancing. Then, when I moved to Montréal, I got into the big corporate world at Gameloft. Dabbled in a couple of things between video games, robotics, ecommerce, music industry, startups, artificial intelligence...<br />
+        I'm currently Growth Ops Manager at Local Logic.<br />
+        As a person, I'm a photographer with over 100M views, an avid video game player, and a gardening enthusiast.
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'Why should I believe in you?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        Because I'm 100% bullshit free and I was described in my last gigs as "<em>one of the most impactful hires [they] made</em>", "<em>a growth rockstar</em>", "<em>the best bridge between teams</em>"...<br />
+        From pre-series A startups to worldwide conglomerate, I've proved time and time again to be an asset that yield results.
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'What do you do exactly?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        I'm here to share my knowledge, experience, and expertise to fuel sustainable growth for digital produts<br />
+        I can bring you what worked, what didn't, why, what tools to use, what errors to avoid, what decisions to take today to yield 100X benefits down the road...
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'Where do you work?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
+        I'm currently based in Montréal, QC. I can work from anywhere with an internet connection.
       </>
     ),
   },
   {
-    title: 'What exactly does Gatsby build?',
+    title: 'When can you start?',
     content: () => (
       <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        Wow, let's calm down. I like the enthusiasm but I'm very picky about what sort of project I get into.<br />
+        Let's chat first and see if this could be a good fit.
+      </>
+    ),
+  },
+  {
+    title: 'How much $$$?',
+    content: () => (
+      <>
+        Let's figure it out. If there's a good fit, we'll work something out.
+      </>
+    ),
+  },
+  {
+    title: 'Are there mandates you would refuse?',
+    content: () => (
+      <>
+        I'm not into bullshit, workaholism, micro-management, and general assholeness.<br />
+      </>
+    ),
+  },
+  {
+    title: 'I do not like your tone in your replies above',
+    content: () => (
+      <>
+        I've reached a point where I know what I do, what I like, and what I bring to the table.<br />
+        I also know what bores me, what angers me, and the patterns to toxic/annoying/misleading/bullshitty projects.<br />
+        So, I'm being super radical and transparent in those questions so we can both save time and energy.<br />
+        <em>what's the point of dialing it down anyways?</em>
       </>
     ),
   },

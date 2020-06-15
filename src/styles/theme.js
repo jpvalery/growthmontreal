@@ -1,26 +1,27 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
+    primary: `'Merriweather', serif`,
     secondary: `'Average', serif`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
-    regular: 'font-size: 24px; line-height: 32px',
-    large: 'font-size: 30px; line-height: 40px',
-    larger: 'font-size: 36px; line-height: 48px',
-    xlarge: 'font-size: 48px; line-height: 56px',
+    regular: 'font-size: 22px; line-height: 24px',
+    large: 'font-size: 28px; line-height: 30px',
+    larger: 'font-size: 36px; line-height: 38px',
+    xlarge: 'font-size: 44px; line-height: 56px',
   },
   color: {
     white: {
-      regular: '#FFFFFF',
-      dark: '#F6F6F6',
+      regular: '#16161D',
+      dark: '#333333',
     },
     black: {
-      lighter: '#ABA8AF',
-      light: '#564F62',
-      regular: '#211E26',
+      lighter: '#888888',
+      light: '#606060',
+      regular: '#FFFFFF',
     },
-    primary: '#8bd8ed',
+    primary: '#16161D',
+    highlight: '#D2B274',
   },
   screen: {
     xs: '575px',
