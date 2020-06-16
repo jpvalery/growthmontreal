@@ -74,6 +74,7 @@ const LogoGrid = styled.div`
     svg {
       width: 100%;
       max-height: 92px;
+      max-width: 276px;
       color: #FFFFFF;
     }
   }
